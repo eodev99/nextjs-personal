@@ -12,6 +12,7 @@ export default function ProjectItem({ project }: Props) {
       <a>
         <Date date={parseISO(project.date)} />
         <h2>{project.title}</h2>
+        <h4> {project.desc}</h4>
         <style jsx>
           {`
             a {

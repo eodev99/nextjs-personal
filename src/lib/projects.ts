@@ -8,6 +8,7 @@ const projectsDirectory = path.join(process.cwd(), "src/pages/projects");
 export type ProjectContent = {
   readonly date: string;
   readonly title: string;
+  readonly desc: string;
   readonly slug: string;
   readonly tags?: string[];
 };
@@ -36,6 +37,7 @@ function fetchProjectContent(): ProjectContent[] {
       const matterData = matterResult.data as {
         date: string;
         title: string;
+        desc: string;
         tags: string[];
         slug: string;
       };

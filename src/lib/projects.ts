@@ -9,6 +9,7 @@ export type ProjectContent = {
   readonly date: string;
   readonly title: string;
   readonly desc: string;
+  readonly tech?: string[];
   readonly slug: string;
   readonly tags?: string[];
 };
@@ -38,6 +39,7 @@ function fetchProjectContent(): ProjectContent[] {
         date: string;
         title: string;
         desc: string;
+        tech: string[];
         tags: string[];
         slug: string;
       };

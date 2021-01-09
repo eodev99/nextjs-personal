@@ -12,7 +12,13 @@ export default function ProjectItem({ project }: Props) {
       <a>
         <Date date={parseISO(project.date)} />
         <h2>{project.title}</h2>
-        <h4> {project.desc}</h4>
+        <h3> {project.desc}</h3>
+        {project.tech !== undefined
+          ? project.tech.map(
+              (item, index, arr) =>
+                `${item} ${index !== arr.length - 1 ? "|" : ""} `
+            )
+          : "Software"}
         <style jsx>
           {`
             a {

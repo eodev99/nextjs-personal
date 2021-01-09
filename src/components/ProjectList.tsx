@@ -1,16 +1,19 @@
 import React from "react";
 import { ProjectContent } from "../lib/projects";
 import ProjectItem from "./ProjectItem";
+import TagLink from "./TagLink";
 import Pagination from "./Pagination";
+import { TagContent } from "../lib/tags";
 
 type Props = {
   projects: ProjectContent[];
+  tags: TagContent[];
   pagination: {
     current: number;
     pages: number;
   };
 };
-export default function ProjectList({ projects, pagination }: Props) {
+export default function ProjectList({ projects, tags, pagination }: Props) {
   return (
     <div className={"container"}>
       <div className={"projects"}>
@@ -30,6 +33,13 @@ export default function ProjectList({ projects, pagination }: Props) {
           }}
         />
       </div>
+      <ul className={"categories"}>
+        {tags.map((it, i) => (
+          <li key={i}>
+            <TagLink tag={it} directory="projects"/>
+          </li>
+        ))}
+      </ul>
       <style jsx>{`
         .container {
           display: flex;

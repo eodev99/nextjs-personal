@@ -25,7 +25,7 @@ export default function Index({ projects, tags, pagination }: Props) {
       <BasicMeta url={url} title={title} />
       <OpenGraphMeta url={url} title={title} />
       <TwitterCardMeta url={url} title={title} />
-      <ProjectList projects={projects} pagination={pagination} />
+      <ProjectList projects={projects} tags={tags} pagination={pagination} />
     </Layout>
   );
 }

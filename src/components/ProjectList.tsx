@@ -21,6 +21,7 @@ export default function ProjectList({ projects, tags, pagination }: Props) {
           {projects.map((it, i) => (
             <li key={i}>
               <ProjectItem project={it} />
+              <hr/>
             </li>
           ))}
         </ul>
@@ -54,6 +55,11 @@ export default function ProjectList({ projects, tags, pagination }: Props) {
         }
         li {
           list-style: none;
+        }
+
+        hr {
+          width: 80%;
+          border-top: 1px black;
         }
         .projects {
           display: flex;

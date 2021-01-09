@@ -12,6 +12,8 @@ export type ProjectContent = {
   readonly tech?: string[];
   readonly slug: string;
   readonly tags?: string[];
+  readonly linkToCode?: string;
+  readonly linkToDemo?: string;
 };
 
 let projectCache: ProjectContent[];
@@ -42,6 +44,8 @@ function fetchProjectContent(): ProjectContent[] {
         tech: string[];
         tags: string[];
         slug: string;
+        linkToCode: string;
+        linkToDemo: string;
       };
       const slug = fileName.replace(/\.mdx$/, "");
 

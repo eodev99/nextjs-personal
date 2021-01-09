@@ -11,9 +11,15 @@ export default function Navigation() {
       <Burger active={active} onClick={() => setActive(!active)} />
       <div className={"container " + (active ? "active" : "")}>
         <ul>
+          
           <li>
             <Link href="/">
               <a className={router.pathname === "/" ? "active" : null}>about</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/projects">
+              <a className={router.pathname === "/projects" ? "active" : null}>projects</a>
             </Link>
           </li>
           <li>
@@ -25,6 +31,16 @@ export default function Navigation() {
               >
                 blog
               </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact">
+              <a className={router.pathname === "/contact" ? "active" : null}>contact</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/books">
+              <a className={router.pathname === "/books" ? "active" : null}>books</a>
             </Link>
           </li>
         </ul>

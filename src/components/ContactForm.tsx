@@ -16,12 +16,12 @@ export default function ContactForm() {
         <input type="hidden" name="personal-site-conact" value="contact" />
         <p>
           <label>
-            Your Name: <input type="text" name="name" />
+            Name: <input type="text" name="name" />
           </label>
         </p>
         <p>
           <label>
-            Your Email: <input type="email" name="email" />
+            Email: <input type="email" name="email" />
           </label>
         </p>
         <p>

@@ -38,11 +38,11 @@ export default function Navigation() {
               <a className={router.pathname === "/contact" ? "active" : null}>contact</a>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/books">
               <a className={router.pathname === "/books" ? "active" : null}>books</a>
             </Link>
-          </li>
+          </li> */}
         </ul>
         <style jsx>
           {`

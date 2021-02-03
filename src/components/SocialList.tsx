@@ -26,7 +26,7 @@ export function SocialList({}) {
 
       <a
         title="LinkedIn"
-        href={`https://linkedin.com/in/${config.github_account}`}
+        href={`https://linkedin.com/in/${config.linkedin_account}`}
         target="_blank"
         rel="noopener"
       >

@@ -26,7 +26,6 @@ export default function Page({ projects, tags, pagination, page }: Props) {
       <BasicMeta url={url} title={title} />
       <OpenGraphMeta url={url} title={title} />
       <TwitterCardMeta url={url} title={title} />
-      
       <ProjectList projects={projects} tags={tags} pagination={pagination} />
       
     </Layout>

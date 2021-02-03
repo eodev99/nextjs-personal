@@ -18,8 +18,10 @@ type Props = {
   };
 };
 export default function Index({ projects, tags, pagination }: Props) {
+
   const url = "/projects";
   const title = "All projects";
+ 
   return (
     <Layout>
       <BasicMeta url={url} title={title} />

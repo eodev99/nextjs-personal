@@ -15,9 +15,13 @@ export default function Index() {
           <h1>
             Hi, I'm Ernest Obihara<span className="fancy">.</span>
           </h1>
-          <span className="handle">@nextjs-netlify-blog</span>
-          <h2>Software Developer and Product Maker</h2>
+          <span className="handle">@eodev99</span>
+          <h2>Software Developer</h2>
           <SocialList />
+          <p>
+            I do software and web devlopment. Currently building a SaaS and finishing University. Check out my socials above.
+          </p>
+          
         </div>
       </div>
       <style jsx>{`
@@ -54,6 +58,9 @@ export default function Index() {
           }
           h2 {
             font-size: 2.25rem;
+          }
+          p {
+            width:50vw;
           }
         }
       `}</style>

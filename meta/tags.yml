@@ -1,8 +1,4 @@
 tags:
-  - slug: document
-    name: document
-  - slug: mock
-    name: mock
   - slug: style
     name: style
   - slug: license
@@ -16,3 +12,7 @@ tags:
     name: personal project
   - slug: university project
     name: university project
+  - slug: frontend 
+    name: frontend 
+  - slug: backend
+    name: backend

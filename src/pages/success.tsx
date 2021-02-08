@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 export default function Success() {
   return (
     <Layout>
-      Success
       <div className="container">
         <div>
           <h2>Thanks for contacting! Will reply ASAP</h2>

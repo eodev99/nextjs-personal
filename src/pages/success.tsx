@@ -1,13 +1,13 @@
 import Layout from "../components/Layout";
-import ComingSoon from "../components/ComingSoon";
 
-export default function Index() {
-  const url = "/blank";
-  const title = "Blank";
+export default function Success() {
   return (
     <Layout>
+      Success
       <div className="container">
-        <ComingSoon />
+        <div>
+          <h2>Thanks for contacting! Will reply ASAP</h2>
+        </div>
       </div>
       <style jsx>{`
         .container {
@@ -23,7 +23,7 @@ export default function Index() {
             font-size: 3rem;
           }
           h2 {
-            font-size: 2.25rem;
+            font-size: 1.75rem;
           }
         }
       `}</style>

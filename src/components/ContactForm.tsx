@@ -1,12 +1,15 @@
 import { DeliveryMethod } from "schema-dts";
 import Layout from "./Layout";
+import SocialList  from "./SocialList";
 
 export default function ContactForm() {
   return (
     <div className="form-container">
+      
       <h1>
         I'm a contact form<span className="fancy">.</span>
       </h1>
+      <SocialList/>
       <form
         name="contact"
         method="post"

@@ -2,7 +2,7 @@ import Layout from "../components/Layout";
 import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
-import { SocialList } from "../components/SocialList";
+import SocialList from "../components/SocialList";
 
 export default function Index() {
   return (
@@ -19,7 +19,7 @@ export default function Index() {
           <h2>Software Developer</h2>
           <SocialList />
           <p>
-            I do software and web devlopment. Currently building a SaaS and finishing University. Check out my socials above.
+            I do software and web development. Currently building a SaaS and finishing University. Check out my socials above.
           </p>
           
         </div>

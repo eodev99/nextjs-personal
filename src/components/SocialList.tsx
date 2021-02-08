@@ -4,7 +4,7 @@ import GitHub from "../assets/github-alt.svg";
 import LinkedIn from "../assets/linkedin-alt.svg";
 import config from "../lib/config";
 
-export function SocialList({}) {
+export default function SocialList({}) {
   return (
     <div>
       <a
